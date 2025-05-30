@@ -1,6 +1,8 @@
 FROM php:8.4
 RUN apt-get update && \
-    apt-get install -y libpq-dev libonig-dev zlib1g zlib1g-dev libzip-dev libxml2-dev libpng-dev libjpeg-dev cmake libfreetype6-dev libfontconfig1-dev xclip libjpeg62-turbo-dev && \ 
+    apt-get install -y libpq-dev libonig-dev zlib1g zlib1g-dev libzip-dev \
+    libcurl4-openssl-dev libxml2-dev libpng-dev libjpeg-dev cmake libfreetype6-dev \
+    libfontconfig1-dev xclip libjpeg62-turbo-dev && \ 
     docker-php-ext-install pdo_mysql mysqli && \
     docker-php-ext-install zip dom simplexml iconv fileinfo mbstring curl&&\
     docker-php-ext-configure gd --with-freetype --with-jpeg && \
