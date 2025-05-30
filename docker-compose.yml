@@ -62,7 +62,7 @@ services:
 
   php:
     build: ./phpenv
-    image: full2php:latest
+    image: php_con5
     container_name: php_con5
     environment:
       - TZ=Asia/Tokyo
