@@ -38,7 +38,7 @@ services:
       - db
     ports:
       # 運用時は下の行その次の行のコメントを差し替える
-      #- "8088:80"
+      - "8088:80"
       # - "192.168.0.1:8088:80"
     volumes:
       - "./phpmyadmin/sessions:/sessions"
