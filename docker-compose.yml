@@ -46,6 +46,7 @@ services:
 
   
   web:
+    image: nginx:latest
     container_name: web_con5
     environment:
       - TZ=Asia/Tokyo
