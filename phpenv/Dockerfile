@@ -1,4 +1,4 @@
-FROM php:8.4
+FROM php:8.4-fpm-bullseye
 RUN apt-get update && \
     apt-get install -y libpq-dev libonig-dev zlib1g zlib1g-dev libzip-dev \
     libcurl4-openssl-dev libxml2-dev libpng-dev libjpeg-dev cmake libfreetype6-dev \
