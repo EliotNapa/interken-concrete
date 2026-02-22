@@ -69,5 +69,5 @@ services:
     volumes:
       - ./phpenv/php.ini:/usr/local/etc/php/php.ini
       - ./home:/var/www/html/home
-    restart: always
+    #restart: always
 
